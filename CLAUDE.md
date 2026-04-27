@@ -46,6 +46,13 @@ To be defined. Update `.claude/agents/CEO_AGENT.md` Sub-Agent Roster when added.
 - Installed as: [`.claude/commands/skill-creator.md`](.claude/commands/skill-creator.md)
 - Role: Create, test, and optimize new skills
 
+### Superpowers
+- Source: [`skills/superpowers/`](skills/superpowers/)
+- Commands: `/brainstorm`, `/write-plan`, `/execute-plan`
+- Agent: `.claude/agents/code-reviewer.md`
+- Role: Full development methodology — brainstorm → plan → execute → test → review → merge
+- 14 skills: brainstorming, writing-plans, executing-plans, test-driven-development, systematic-debugging, and more
+
 ## Directories
 
 | Directory | Purpose |
