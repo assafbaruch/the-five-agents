@@ -30,8 +30,22 @@ _To be added._
 - Role: Analyzes `reference/` images, extracts visual style, crafts prompt, generates image via `/nano-banana-2`, saves to `outputs/`
 - Depends on: `/nano-banana-2` skill (MCP)
 
+### Yael Agent (content writer)
+- Definition: [`.claude/agents/YAEL_AGENT.md`](.claude/agents/YAEL_AGENT.md)
+- PRD: [`agents/YAEL_AGENT_PRD.md`](agents/YAEL_AGENT_PRD.md)
+- Role: LLM-Only content writer — rewrites articles from `Content/` in project style, calls Yuval for images, saves to `Output/`, moves source to `Content/Ready/`
+- LLM-Only: no external tools, no internet, no API access
+
 ### Sub-Agents (TBD)
 To be defined. Update `.claude/agents/CEO_AGENT.md` Sub-Agent Roster when added.
+
+## Directories
+
+| Directory | Purpose |
+|-----------|---------|
+| `Content/` | Raw articles waiting to be rewritten by Yael |
+| `Content/Ready/` | Source articles Yael has already processed |
+| `Output/` | Rewritten articles produced by Yael |
 
 ## Skills
 
